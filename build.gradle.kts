@@ -5,9 +5,10 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.4"
+version = "1.0.5"
 
 kotlin {
+    jvmToolchain(21)
     androidTarget {
         publishLibraryVariants("release")
     }
@@ -25,15 +26,15 @@ kotlin {
 
 android {
     namespace = "org.connecttag.core.crypto"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         minSdk = 26
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 }
 
