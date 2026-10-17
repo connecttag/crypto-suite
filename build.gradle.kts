@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.connecttag.libs.kotlin"
-version = "1.0.2"
+version = "1.0.4"
 
 kotlin {
     androidTarget {
